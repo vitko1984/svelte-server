@@ -10,7 +10,7 @@ const express = require('express'),
       basketRouter = express.Router(),
       mailerRouter = express.Router(),
       telegramRouter = express.Router(),
-      whatsappRouter = express.Router(),
+      //whatsappRouter = express.Router(),
       bodyParser = require('body-parser'),
       cors = require('cors'),
       //consign = require('consign'),
@@ -31,7 +31,7 @@ const express = require('express'),
       basketAPI = require('./routes/basket-api'),
       mailerAPI = require('./routes/mailer-api'),
       telegramAPI = require('./routes/telegram-api'),
-      whatsappAPI = require('./routes/whatsapp-api');
+      //whatsappAPI = require('./routes/whatsapp-api');
       UserModel = require('./models/user-model'),
       ClientModel = require('./models/client-model'),
       CommentModel = require('./models/comment-model'),
@@ -89,7 +89,7 @@ app.use('/mailer', mailerRouter);
 mailerRouter.post('/', mailerAPI.POST());
 
 app.use('/telegram', telegramRouter);
-telegramRouter.get('/', telegramAPI.GET());
+//telegramRouter.get('/', telegramAPI.GET());
 telegramRouter.post('/', telegramAPI.POST());
 
 /*app.use('/whatsapp', whatsappRouter);
