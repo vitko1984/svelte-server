@@ -1,4 +1,4 @@
-const Chapi = require('whatsapp-chapi');
+const Chapi = require("whatsapp-chapi");
 
 const token = process.env.WHATSAPP_TOKEN, 
       apiUrl = process.env.WHATSAPP_URL, 
